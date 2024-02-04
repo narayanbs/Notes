@@ -38,7 +38,7 @@
 ```
 7. Push the changes in your local repository to GitHub.com.
 ```bash
-	$ git push origin main
+	$ git push -u origin main
 	(Pushes the changes in your local repository up to the remote repository you specified as the origin)
 ```
 

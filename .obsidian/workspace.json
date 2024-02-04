@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "10-System/Installation.md",
+                "file": "20-Coding/Github.md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "10-System/Installation.md",
+                "file": "20-Coding/Github.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "10-System/Installation.md",
+                "file": "20-Coding/Github.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "10-System/Installation.md"
+                "file": "20-Coding/Github.md"
               }
             }
           }
@@ -156,9 +156,9 @@
   },
   "active": "90d8391f888e3697",
   "lastOpenFiles": [
+    "10-System/Installation.md",
     "20-Coding/Docker.md",
     "20-Coding/Django.md",
-    "10-System/Installation.md",
     "10-System/tplinkadapter.md",
     "10-System/clang-llvm.md",
     "10-System/sdkman-java.md",
