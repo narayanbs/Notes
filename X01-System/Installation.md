@@ -117,7 +117,7 @@ and reboot
 ~~~
 
 * Install Obsidian (Read how to add obsidian to favorites in [issues&fixes](./issues&fixes.md) )
-* Install mpv player and copy configuration scripts. ([mpv Keybindings](../40-Resources/mpv_player.md))
+* Install mpv player and copy configuration scripts. ([mpv Keybindings](../X04-Resources/mpv_player.md))
 ~~~bash
   $ sudo apt install mpv -y
   $ cp -r ~/dotfiles/.config/mpv/scripts ~/.config/mpv

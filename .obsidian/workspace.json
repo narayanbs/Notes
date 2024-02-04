@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "7d83cd0bc425a1c7",
+        "id": "14ad50a3c7c0f454",
         "type": "tabs",
         "children": [
           {
-            "id": "90d8391f888e3697",
+            "id": "c1f6fcf9040cf3b6",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "20-Coding/Github.md",
+                "file": "X02-Coding/Docker.md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "20-Coding/Github.md",
+                "file": "X02-Coding/Docker.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "20-Coding/Github.md",
+                "file": "X02-Coding/Docker.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "20-Coding/Github.md"
+                "file": "X02-Coding/Docker.md"
               }
             }
           }
@@ -154,8 +154,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "90d8391f888e3697",
+  "active": "c1f6fcf9040cf3b6",
   "lastOpenFiles": [
+    "X01-System/Installation.md",
+    "X04-Resources/mpv_player.md",
     "10-System/Installation.md",
     "20-Coding/Docker.md",
     "20-Coding/Django.md",
@@ -184,8 +186,6 @@
     "Clean System Install/tplinkadapter.md",
     "Clean System Install/vscode-config.md",
     "Clean System Install/node-npm.md",
-    "Clean System Install/Python.md",
-    "Clean System Install/sdkman-java.md",
     "DevTools",
     "ToolTips",
     "Debugging",
