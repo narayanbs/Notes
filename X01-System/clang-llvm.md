@@ -21,3 +21,5 @@
   export PATH=/usr/local/clang_17.0.2/bin:$PATH
   export LD_LIBRARY_PATH=/usr/local/clang_17.0.2/lib:$LD_LIBRARY_PATH
 ~~~
+
+You may need to install libncurses5 if you get libtinfo.so.5 error `sudo apt install libncurses5`

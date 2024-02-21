@@ -22,7 +22,7 @@ $ sudo groupadd docker
 $ sudo gpasswd -a $USER docker
 ```
 
-
+	* Restart docker 
 #### Docker Concepts
 
 **Images**

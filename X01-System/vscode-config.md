@@ -107,19 +107,18 @@ The extensions are stored in ~/.vscode/extensions
 Open User settings using Ctrl+shift+p - `settings.json (~/.config/Code/User/settings.json)` and enter the following
 
 ```js
-
 {
     "workbench.startupEditor": "none",
-    "editor.fontFamily": "FiraCode Nerd Font",
+    "editor.fontFamily": "JetBrainsMono Nerd Font",
     "editor.fontLigatures": true,
     "editor.fontWeight": "500",
     "editor.fontSize": 14,
     "editor.formatOnSave": true,
     "editor.codeActionsOnSave": {
-        "source.organizeImports": true
+        "source.organizeImports": "always"
     },
     "editor.inlayHints.enabled": "offUnlessPressed",
-    "workbench.colorTheme": "Gruvbox Dark Hard",
+    "workbench.colorTheme": "Everforest Dark",
     "workbench.iconTheme": "vscode-icons",
     "editor.minimap.enabled": false,
     "emmet.includeLanguages": {
@@ -150,8 +149,10 @@ Open User settings using Ctrl+shift+p - `settings.json (~/.config/Code/User/sett
     "breadcrumbs.enabled": false,
     "telemetry.telemetryLevel": "off",
     "liveServer.settings.donotShowInfoMsg": true,
+    "vsicons.dontShowNewVersionMessage": true,
 }
-```
+
+````
 
 ### Duplicate Line keyboard Shortcut
 

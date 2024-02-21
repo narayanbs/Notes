@@ -1,10 +1,11 @@
 #### Fonts and Themes
-* Install Fira Code Nerd Font
+* Install Fira Code Nerd Font and JetBrainsMono Nerd Font
 ~~~bash
   # visit https://nerdfonts.com/font-downloads 
-  # Download Firacode Nerd Font
+  # Download Firacode Nerd Font and JetBrainsMono Nerd Font
   $ cp Nerd_Fonts/Firacode/*.ttf ~/.local/share/fonts
-  $ fc-cache -f v
+  $ cp Nerd_Fonts/JetBrainsMono/*.ttf ~/.local/share/fonts
+  $ fc-cache -f -v
 ~~~
 and reboot
 
