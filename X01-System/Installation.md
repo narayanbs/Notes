@@ -1,21 +1,3 @@
-#### Fonts and Themes
-* Install Fira Code Nerd Font and JetBrainsMono Nerd Font
-~~~bash
-  # visit https://nerdfonts.com/font-downloads 
-  # Download Firacode Nerd Font and JetBrainsMono Nerd Font
-  $ cp Nerd_Fonts/Firacode/*.ttf ~/.local/share/fonts
-  $ cp Nerd_Fonts/JetBrainsMono/*.ttf ~/.local/share/fonts
-  $ fc-cache -f -v
-~~~
-and reboot
-
-**Optional**
-* Install Fira Code font -- `sudo apt install fonts-firacode`
-
-* For gedit, goto preferences/Fonts & Colors, Choose Fira Code Nerd Font 11 Medium
-* Choose the theme gnome-text-editor-themes/catpuccin-frappe.xml by clicking the + button
-* For gnome-text-editor `sudo cp gnome-text-editor-themes/catpuccin-frappe.xml /usr/share/gnome-text-editor/styles`
-
 #### Software
 
 * Install build-essential `sudo apt install build-essential -y`
@@ -35,6 +17,24 @@ and reboot
 ~~~bash
   $ git clone https://github.com/narayanbs/dotfiles
 ~~~
+
+* Checkout Notes repository from github
+~~~bash
+  $ git clone https://github.com/narayanbs/Notes
+~~~
+
+* Install Fira Code Nerd Font and JetBrainsMono Nerd Font
+~~~bash
+  $ cp Notes/Nerd_Fonts/*.ttf ~/.local/share/fonts
+  $ fc-cache -f -v
+~~~
+and reboot
+**Optional**
+* Install Fira Code font -- `sudo apt install fonts-firacode`
+
+* For gedit, goto preferences/Fonts & Colors, Choose Fira Code Nerd Font 11 Medium
+* Choose the theme gnome-text-editor-themes/catpuccin-frappe.xml by clicking the + button
+* For gnome-text-editor `sudo cp gnome-text-editor-themes/catpuccin-frappe.xml /usr/share/gnome-text-editor/styles`
 
 * Install curl, tree, htop `sudo apt install htop curl tree` -y
 * Install neovim and add an alias in .bashrc (alias vim='nvim--clean')
