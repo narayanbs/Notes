@@ -95,6 +95,10 @@
 ~~~bash
   $ poetry config virtualenvs.in-project true
 ~~~
+* Configure poetry to use pyenv chosen version of python
+~~~bash
+  $ poetry config virtualenvs.prefer-active-python true
+~~~
 
 * Uninstall poetry
 ~~~bash
