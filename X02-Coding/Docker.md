@@ -122,8 +122,7 @@ $ docker exec -it mysql_local bash
 If we are using a sql script 
 $ docker exec -i mysql_local mysql -uroot -p < init.sql
 
-check if init.sql has initiated any changes into mysql.
-$ docker exec -it mysql_local bash
+check if init.sql has initiated any changes into mysql
 
 ```
 

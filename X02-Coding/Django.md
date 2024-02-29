@@ -1,49 +1,6 @@
-If we prefer a local version of python then,
-```bash
-$ pyenv local 3.9.0
-```
+#### Prerequsite
 
-#### Project Setup with Pip 
-
-* First create the project folder and activate a virtual environment. 
-```bash
-mkdir pyspace && cd pyspace
-python -m venv myenv
-source myenv/bin/activate
-```
-* Install the required libraries
-```bash
-pip install django~=4.0 black flake8-bugbear isort mypy
-```
-
-#### Project Setup with Poetry
-
-```bash
-poetry new myproject
-cd myproject
-   or
-
-# if you already have a working folder, say myproject then you can 
-# initialize the project using poetry (interactive initialization)
-cd myproject && poetry init -n
-
-# Add dev dependencies
-poetry add -GD black mypy flake8-bugbear isort
-
-# Add prod dependencies if any
-poetry add django 
-
-# enable virtual environment
-poetry shell 
-    or
-source .venv/bin/activate 
-
-# to deactivate
-exit
-  or
-deactivate
-```
-
+**Create a python project as shown [[X02-Coding/Python|here]]**
 #### Initialize Django project
 
 ```bash
