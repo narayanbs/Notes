@@ -27,9 +27,6 @@ $ vim pyproject.toml
 [tool.poetry.dependencies]
 python = "^3.11"
 
-# Activate virtual environment
-$ poetry shell 
-
 # Add dependencies
 $ poetry add pymysql[rsa]
 
@@ -39,7 +36,7 @@ $ poetry add pymysql[rsa]
 	pymysql = {extras = ["rsa"], version = "^1.1.0"}
 
 # Add development dependenices 
-$ poetry add --group=dev black flake8-bugbear isort mypy
+$ poetry add --group dev black flake8-bugbear isort mypy
 
 # Development dependencies will be reflected in pyproject.toml
 	[tool.poetry.group.dev.dependencies]
@@ -48,8 +45,19 @@ $ poetry add --group=dev black flake8-bugbear isort mypy
 	isort = "^5.13.2"
 	mypy = "^1.8.0"
 
+# Add testing dependencies
+$ poetry add --group test pytest
+
+# Activate virtual environment
+$ poetry shell 
+
 # create source files inside pydb/ and test files inside tests/
 
+# Run tests 
+$ python run pytest -v -s
+
+# Run source files using 
+$ python run 
 ```
 ##### New Project using pip (name: pydjango)
 ```bash
@@ -71,7 +79,15 @@ $ python -m venv myenv
 $ source myenv/bin/activate
 
 # Install dependencies
-$ pip install django~=4.0 black flake8-bugbear isort mypy
+$ pip install django~=4.0 black flake8-bugbear isort mypy pytest
+
+# Create test files inside tests
+# Run test using pytest
+$ pytest -v -s
+
+
+Note: To create a requirements.txt from poetry.lock, use the following command
+$ poetry export --output requirements.txt
 ```
 
 ##### Python with MySQL - Prerequisite- Look at [[Docker#Docker Workflow Example|MySQL with docker]]
