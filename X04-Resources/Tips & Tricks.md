@@ -8,3 +8,5 @@ We use `<shift+k>` to show the documentation of the variable. But to scroll thro
 * either use the mouse
 * or `<C-w>w` and use vim like `j,k` to scroll up and down, and `<C-w>q` to close the window
 
+##### Adding Unicode characters in Linux on Neovim
+* Press Ctrl+Shift+u, then type the hexadecimal code of the Unicode character and press enter

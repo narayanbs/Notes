@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "X02-Coding/Docker.md",
+                "file": "X02-Coding/Tmux.md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "X02-Coding/Docker.md",
+                "file": "X02-Coding/Tmux.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "X02-Coding/Docker.md",
+                "file": "X02-Coding/Tmux.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "X02-Coding/Docker.md"
+                "file": "X02-Coding/Tmux.md"
               }
             }
           }
@@ -156,8 +156,25 @@
   },
   "active": "c1f6fcf9040cf3b6",
   "lastOpenFiles": [
-    "X01-System/Installation.md",
+    "X02-Coding/Tailwind.md",
+    "X02-Coding/React-Native.md",
+    "X02-Coding/Python.md",
+    "X02-Coding/Nginx.md",
+    "X02-Coding/Django.md",
+    "X04-Resources/Vim tricks.md",
+    "X04-Resources/Tips & Tricks.md",
+    "X04-Resources/shell.md",
+    "X04-Resources/Pointer_Alignment_1.md",
+    "X04-Resources/Pointer_Alignment_0.md",
     "X04-Resources/mpv_player.md",
+    "X04-Resources/Misc.md",
+    "X04-Resources/Makefile.md",
+    "X04-Resources/Html-Css.md",
+    "X04-Resources/golang types.md",
+    "X04-Resources/Git Tips & Tricks.md",
+    "X02-Coding/Tmux.md",
+    "X02-Coding/Docker.md",
+    "X01-System/Installation.md",
     "10-System/Installation.md",
     "20-Coding/Docker.md",
     "20-Coding/Django.md",
@@ -165,27 +182,10 @@
     "10-System/clang-llvm.md",
     "10-System/sdkman-java.md",
     "10-System/Python.md",
-    "10-System/vscode-config.md",
-    "10-System/node-npm.md",
-    "40-Resources/Analysis of Algorithms.md",
-    "50-Todo/Todo.md",
-    "50-Todo/Revision.md",
-    "50-Todo/Python_revision.md",
-    "50-Todo/Projects-Revision.md",
-    "50-Todo/Javascript_revision.md",
     "50-Todo",
-    "40-Resources/mpv_player.md",
-    "Clean System Install/Installation.md",
-    "Clean System Install/mpv_player.md",
-    "Utilities/mpv player.md",
-    "Clean System Install/issues&fixes.md",
     "Utilities",
-    "mpv player.md",
     "Pasted image 20240203145127.png",
     "Pasted image 20240203145006.png",
-    "Clean System Install/tplinkadapter.md",
-    "Clean System Install/vscode-config.md",
-    "Clean System Install/node-npm.md",
     "DevTools",
     "ToolTips",
     "Debugging",
