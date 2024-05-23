@@ -1,10 +1,19 @@
 
-#### Installation in Ubuntu >= 20.04
+#### Installation in Ubuntu 
 
 * Install the necessary dependencies and Kernel headers in Ubuntu Linux with command:
 ~~~bash
   $ sudo apt install dkms git build-essential libelf-dev linux-headers-$(uname -r)
 ~~~
+* For 24.04 do the following
+~~~bash
+sudo apt install git
+git clone https://github.com/morrownr/8821au-20210708.git
+sudo dkms add ./8821au-20210708
+sudo dkms install rtl8821au/5.12.5.2
+~~~
+
+* For versions below 24.04
 
 * Clone the `rtl8812au` repository
 ~~~bash
