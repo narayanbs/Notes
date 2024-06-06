@@ -1,10 +1,11 @@
 
-##### Install Python extension
+##### Install Python extension and Black Formatter
 
 Launch VS Code Quick Open (ctrl+p), paste the following and enter
 
 ```js
 ext install ms-python.python
+ext install ms-python.black-formatter
 ```
 
 ##### Install Golang extension
@@ -126,6 +127,9 @@ Open User settings using Ctrl+shift+p - `settings.json (~/.config/Code/User/sett
     },
     "gopls": {
         "ui.semanticTokens": true
+    },
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter"
     },
     "[html]": {
         "editor.defaultFormatter": "vscode.html-language-features"
