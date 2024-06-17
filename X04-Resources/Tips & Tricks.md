@@ -1,3 +1,8 @@
+#### Creating a large file with random bytes inside it in linux
+dd if=/dev/random of=/tmp/file1.db count=100 bs=1M
+
+Note: By default files inside /tmp are cleared in 10 days and  /var/tmp in 30 days. 
+
 #### Python Virtual Environment
 * How do we know if a virtual environment is active?
 	* check the `$VIRTUAL_ENV` variable. When active, it should contain the virtual environment's directory.
