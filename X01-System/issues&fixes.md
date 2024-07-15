@@ -1,3 +1,7 @@
+# neovim clipboard issue
+```bash
+sudo apt install xsel
+```
 #### Disable bluetooth 
 ```bash
 sudo systemctl stop bluetooth.service, sudo systemctl disable bluetooth.service
