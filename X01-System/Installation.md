@@ -102,9 +102,10 @@ and reboot
 
 #### Editors
 
+* Install Lazyvim and configure it [neovim](./neovim-config.md)
 * Install and configure [vscode](./vscode-config.md)
+* Install and configure [zed](./zed-config.md)
 * Install intellij
-* Configure [neovim](./neovim-config.md)
 
 #### Others
 
