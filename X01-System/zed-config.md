@@ -19,7 +19,8 @@ vim ~/.config/zed/settings.json
     "mode": "system",
     "light": "One Light",
     "dark": "One Dark"
-  }
+  },
+  "vim_mode": true
 }
 
 #### Project Configuration
