@@ -37,7 +37,7 @@ venv = "myenv"
 profile = "black"
 
 ##### black formatter to python project
-Add the following entries into settings.json
+Add the following entries into .zed/settings.json
 
 {
   "languages": {
@@ -52,4 +52,26 @@ Add the following entries into settings.json
     }
   }
 }
-
+##### C/C++ lsp and formatter settings
+Add the following entries into .zed/settings.json
+{
+  "languages": {
+    "C": {
+      "enable_language_server": true,
+      "use_autoclose": true,
+      "extend_comment_on_newline": true,
+      "remove_trailing_whitespace_on_save": true,
+      "tab_size": 4,
+      "indent_size": 4,
+      "indent_style": "space",
+      "code_actions_on_format": {
+        "clangd": true
+      },
+      "always_treat_brackets_as_autoclosed": true,
+      "ensure_final_newline_on_save": true,
+      "format_on_save": "on"
+    },
+  }
+}
+Additionally you need to generate .clang-format file
+$ clang-format -style=llvm -dump-config > .clang-format
