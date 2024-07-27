@@ -1,3 +1,7 @@
+##### Vim extension for vscode
+
+ext install vscodevim.vim
+
 ##### Install Python extension and Black Formatter
 
 Launch VS Code Quick Open (ctrl+p), paste the following and enter
