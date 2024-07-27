@@ -1,64 +1,3 @@
-##### New Project using Poetry (name: pydb)
-```bash
-$ poetry new pydb
-$ cd pydb
-	
-	or
-
-$ mkdir -p pydb/{pydb,tests} && cd pydb
-$ touch pydb/__init__.py tests/__init__.py README.md
-$ poetry init -n
-
-# Inside pydb folder
-
-	├── pydb
-	│   └── __init__.py
-	├── pyproject.toml
-	├── README.md
-	└── tests
-	    └── __init__.py
-
-# Specify a python version using pyenv
-$ pyenv local 3.11.0
-
-# update pyproject.toml, so that tool.poetry.dependencies reflect the chosen python version
-$ vim pyproject.toml
-
-[tool.poetry.dependencies]
-python = "^3.11"
-
-# Add dependencies
-$ poetry add pymysql[rsa]
-
-# Dependencies will be reflected in pyproject.toml
-	[tool.poetry.dependencies]
-	python = "^3.11"
-	pymysql = {extras = ["rsa"], version = "^1.1.0"}
-
-# Add development dependenices 
-$ poetry add --group dev black flake8-bugbear isort mypy
-
-# Development dependencies will be reflected in pyproject.toml
-	[tool.poetry.group.dev.dependencies]
-	black = "^24.2.0"
-	flake8-bugbear = "^24.2.6"
-	isort = "^5.13.2"
-	mypy = "^1.8.0"
-
-# Add testing dependencies
-$ poetry add --group test pytest
-
-# Activate virtual environment
-$ poetry shell 
-
-# create source files inside pydb/ and test files inside tests/
-
-# Run tests 
-$ python run pytest -v -s
-
-# Run source files using 
-$ python run 
-```
 ##### New Project using pip (name: pydjango)
 ```bash
 $ mkdir -p pydjango/{pydjango,tests} && cd pydjango
@@ -80,6 +19,10 @@ $ source myenv/bin/activate
 
 # Install dependencies
 $ pip install django~=4.0 black flake8-bugbear isort mypy pytest
+
+# Update pyproject.toml
+[tool.isort]
+profile = "black"
 
 # Create test files inside tests
 # Run test using pytest
@@ -153,3 +96,66 @@ except Error as e:
     print(f"Error while connection to MySQL {e}")
 ```
 Run the above and check if the connection is working. 
+
+##### New Project using Poetry (name: pydb)
+```bash
+$ poetry new pydb
+$ cd pydb
+	
+	or
+
+$ mkdir -p pydb/{pydb,tests} && cd pydb
+$ touch pydb/__init__.py tests/__init__.py README.md
+$ poetry init -n
+
+# Inside pydb folder
+
+	├── pydb
+	│   └── __init__.py
+	├── pyproject.toml
+	├── README.md
+	└── tests
+	    └── __init__.py
+
+# Specify a python version using pyenv
+$ pyenv local 3.11.0
+
+# update pyproject.toml, so that tool.poetry.dependencies reflect the chosen python version
+$ vim pyproject.toml
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+# Add dependencies
+$ poetry add pymysql[rsa]
+
+# Dependencies will be reflected in pyproject.toml
+	[tool.poetry.dependencies]
+	python = "^3.11"
+	pymysql = {extras = ["rsa"], version = "^1.1.0"}
+
+# Add development dependenices 
+$ poetry add --group dev black flake8-bugbear isort mypy
+
+# Development dependencies will be reflected in pyproject.toml
+	[tool.poetry.group.dev.dependencies]
+	black = "^24.2.0"
+	flake8-bugbear = "^24.2.6"
+	isort = "^5.13.2"
+	mypy = "^1.8.0"
+
+# Add testing dependencies
+$ poetry add --group test pytest
+
+# Activate virtual environment
+$ poetry shell 
+
+# create source files inside pydb/ and test files inside tests/
+
+# Run tests 
+$ python run pytest -v -s
+
+# Run source files using 
+$ python run 
+```
+

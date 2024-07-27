@@ -1,4 +1,3 @@
-
 ##### Install Python extension and Black Formatter
 
 Launch VS Code Quick Open (ctrl+p), paste the following and enter
@@ -44,57 +43,10 @@ ext install esbenp.prettier-vscode
 ext install dbaeumer.vscode-eslint
 ```
 
-##### Install Path intellisense extension
-
-```js
-ext install christian-kohler.path-intellisense
-```
-
-##### Install EditorConfig extension
-
-```js
-ext install EditorConfig.EditorConfig
-```
-
 ##### Install themes
-
-Material theme
-
-```js
-ext install Equinusocio.vsc-material-theme
-```
-
-Kanagawa
-
-```js
-ext install qufiwefefwoyn.kanagawa
-```
-
-Gruvbox
-
-```js
-ext install jdinhlife.gruvbox
-```
-
-Tokyo Night
-
-```js
-ext install enkia.tokyo-night
-```
-
-Nord Theme
-
-```js
-ext install arcticicestudio.nord-visual-studio-code
-```
+Everforest theme - ext install sainnhe.everforest
 
 ##### Install Icons
-
-Material icon theme -- (ctrl+shift+p --> Material icons: change folder color, change folder theme etc)
-
-```js
-ext install PKief.material-icon-theme
-```
 
 vscode icons -- This is a new one i am using
 ```js
