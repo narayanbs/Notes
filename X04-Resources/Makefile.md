@@ -14,8 +14,10 @@ By default make will look for a `hello.c` file and compile it to a `hello` execu
 $ make
 $ cc hello.c -o hello
 ```
-This is because make was developed for building C projects. So by default it has implicit rules 
-* \*.o is automatically made from \*.c files with the command `$(CC) -c $(CPPFLAGS) $(CFLAGS) $^ -o $@`
+This is because make was developed for building C projects. So by default it has implicit 
+rules 
+* \*.o is automatically made from \*.c files with the command `$(CC) -c $(CPPFLAGS) 
+$(CFLAGS) $^ -o $@`
 
 Let's consider another example
 ```sh
@@ -29,10 +31,12 @@ blah.c:
 	echo "int main() { return 0; }" > blah.c # Runs first
 ```
 A target is run only if it doesn't exist or any dependency is newer than it. 
-In the example above, `blah` will be invoked only if `blah.o` is newer than `blah`. Likewise `blah.o` is invoked if `blah.c` is 
+In the example above, `blah` will be invoked only if `blah.o` is newer than `blah`. 
+Likewise `blah.o` is invoked if `blah.c` is 
 newer that it. 
 
-if we prefix `.PHONY` to a target, then it will prevent make from looking for a file with the name of the target.
+if we prefix `.PHONY` to a target, then it will prevent make from looking for a file with 
+the name of the target.
 for ex:
 ``` sh
 .PHONY: clean

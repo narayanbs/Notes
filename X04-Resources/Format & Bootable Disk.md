@@ -54,10 +54,14 @@ dd: error writing '/dev/sdb': No space left on device
 	```
 - Now create the bootable disk using dd
 	```
-	sudo dd if=~/Downloads/archlinux-2023.07.01-x86_64.iso of=/dev/sdb bs=4M status=progress conv=fsync
+	sudo dd if=~/Downloads/archlinux-2023.07.01-x86_64.iso of=/dev/sdb bs=4M 
+status=progress conv=fsync
 	```
 
 ##### Note:
-- dd may seem to freeze, but it is actually syncing the data on-disk after the operation. In order to optimize IO operations
-you should be able to estimate how much data there is left to write by looking at the "Dirty:" value in `/proc/meminfo` - this is the total amount of data pending to be written to disk.
+- dd may seem to freeze, but it is actually syncing the data on-disk after the operation. 
+In order to optimize IO operations
+you should be able to estimate how much data there is left to write by looking at the 
+"Dirty:" value in `/proc/meminfo` - this is the total amount of data pending to be 
+written to disk.
 
