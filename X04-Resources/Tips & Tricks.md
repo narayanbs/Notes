@@ -1,3 +1,8 @@
+#### Search for all occurences of a string inside a file. 
+for ex: search all  title="somerandomtext" inside a file  
+$ grep -o 'title="[^"]*"' blogs-i-follow.opml
+$ cat blogs-i-follow.opml | grep -o 'title="[^"]*"' 
+
 #### Creating a large file with random bytes inside it in linux
 dd if=/dev/random of=/tmp/file1.db count=100 bs=1M
 
