@@ -125,3 +125,4 @@ and reboot
   $ cp -r ~/dotfiles/.config/mpv/scripts ~/.config/mpv
 ~~~
 * install audacious (`sudo apt install audacious`)
+* Install Foliate e-book reader (`sudo snap install foliate`)
