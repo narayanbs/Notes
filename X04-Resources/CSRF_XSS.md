@@ -1,3 +1,84 @@
+Cross-Site Request Forgery (CSRF) is a type of attack where a malicious actor tricks a user's 
+browser into making unwanted requests to a web application where the user is authenticated. 
+This can result in unintended actions being performed on behalf of the user.
+
+### How CSRF Works
+
+1. **Victim Authentication**: The victim logs into a web application and has an active session 
+with that application. For example, they might be logged into their online banking account.
+
+2. **Malicious Request**: While the user is still logged in, they visit a malicious website 
+(or click on a link in an email, etc.) controlled by an attacker. This malicious site contains 
+a script or HTML that generates a request to the target web application.
+
+3. **Unintended Action**: Since the user's browser is already authenticated with the target 
+web application (e.g., it has valid cookies or session tokens), the malicious request is sent 
+with the user's credentials, potentially performing actions like transferring money, changing 
+account settings, etc., without the user's consent.
+
+### Example Scenarios
+
+**Scenario 1: Banking Application**
+
+1. **Victim's Bank Account**: User A is logged into their online banking account.
+2. **Malicious Website**: User A visits a site controlled by an attacker that contains the 
+following HTML form:
+   ```html
+   <form action="https://bank.example.com/transfer" method="POST">
+     <input type="hidden" name="account" value="attacker_account"/>
+     <input type="hidden" name="amount" value="1000"/>
+     <input type="submit" value="Click Me"/>
+   </form>
+   <script>
+     document.forms[0].submit();
+   </script>
+   ```
+   When the form is submitted, it sends a POST request to the bank’s server to transfer 
+money from User A's account to the attacker’s account.
+
+3. **Result**: If the user is still authenticated with their banking site, the request is 
+processed, and the money is transferred without User A’s knowledge.
+
+**Scenario 2: Changing Account Settings**
+
+1. **Victim's Account Settings**: User B is logged into a social media account that allows 
+changing their email address.
+
+2. **Malicious Email**: User B receives an email containing a link or an HTML form designed to 
+update the email address. For example:
+   ```html
+   <img src="https://social.example.com/change-email?email=attacker@example.com" />
+   ```
+   The URL causes a request to change User B's email address to `attacker@example.com`.
+
+3. **Result**: The request is sent with User B’s authentication token (stored in cookies or 
+headers), and the email address is changed without User B’s knowledge.
+
+### Preventing CSRF
+
+1. **Anti-CSRF Tokens**: Implement a unique token for each request that is tied to the 
+user’s session. This token must be included in requests that modify data (POST, PUT, DELETE 
+requests). The server verifies the token before processing the request.
+   ```html
+   <input type="hidden" name="csrf_token" value="unique_token_value"/>
+   ```
+
+2. **SameSite Cookies**: Set the `SameSite` attribute on cookies to `Strict` or `Lax`, which 
+restricts the browser from sending cookies along with cross-site requests.
+   ```http
+   Set-Cookie: sessionId=abc123; SameSite=Strict
+   ```
+
+3. **Referer Header Check**: Validate the `Referer` header to ensure that the request 
+originates from a trusted source.
+
+4. **Custom Headers**: Use custom headers (e.g., `X-Requested-With: XMLHttpRequest`) that are 
+not normally included in cross-site requests.
+
+By combining these methods, you can significantly reduce the risk of CSRF attacks.
+
+--------------------------------------------------------
+
 ### What is XSS?
 
 Cross-Site Scripting (XSS) is a vulnerability in web applications where an attacker can 
