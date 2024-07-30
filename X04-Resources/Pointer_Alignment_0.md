@@ -130,7 +130,7 @@ a character type.
 ```
 "keyword is access. "
 If you don't access but just convert, you don't break the strict aliasing rule.
-But you may break the alignment rule as shown below.
+But you may break the alignment rule.
 
 
 ----------------------------
