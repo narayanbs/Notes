@@ -3,6 +3,25 @@ for example, search all  title="somerandomtext" inside a file
 $ grep -o 'title="[^"]*"' blogs-i-follow.opml
 $ cat blogs-i-follow.opml | grep -o 'title="[^"]*"' 
 
+#### Search for a string inside all files in a directory
+$ grep -rni "text string" /path/to/directory
+     -r performs a recursive search within subdirectories.
+     -n displays the line number containing the pattern.
+     -i ignores the case of the text string.
+
+To filter the results and display only the filenames without duplication, you can use the following command:
+
+$ grep -rli "text string" /path/to/directory
+    -l prints only the names of the files containing the pattern.
+
+To find files containing a specific text string using the find command, you can utilize the following syntax:
+
+$ find /path/to/directory -type f -exec grep -l "text string" {} \;
+
+    /path/to/directory specifies the directory in which the search will be performed.
+    -type f filters the search to only include regular files.
+    -exec grep -l "text string" {} \; executes the grep command on each file found and displays the filenames that contain the text string
+
 #### Creating a large file with random bytes inside it in linux
 dd if=/dev/random of=/tmp/file1.db count=100 bs=1M
 
