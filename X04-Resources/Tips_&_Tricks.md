@@ -1,3 +1,26 @@
+#### How to insert contents from clipboard into the current Vim buffer with width formatting.
+We can use xclip or xsel to fetch the clipboard content
+The following will open vim and run the command 'r !xsel -o | fold -w 80'
+$ vim -c 'r !xsel -o | fold -w 80'
+In the above command replace xsel with xclip if you are using xclip.
+
+Let's understand the above command. 
+- vim -c  says run the command after opening vim
+- `:r`: This is a Vim command that stands for "read". It is used to read content from a file or
+command and insert it into the current buffer at the cursor position.
+- `!`: This symbol in Vim is used to run an external shell command. When you use `!` in a Vim command, 
+it tells Vim to execute the following string as a shell command.
+- `xsel -o`: This is a shell command that interacts with the clipboard. Specifically:
+  - `xsel` is a utility for accessing the X clipboard.
+  - `-o` stands for "output", which means it outputs the contents of the clipboard.
+
+And the output is piped to the fold command and pasted into the current buffer.
+
+We could have also done the following
+
+$ xsel --clipboard --output | fold -w 80 > /tmp/clipboard_folded.txt
+$ vim /tmp/clipboard_folded.txt
+
 #### Search for all occurences of a string inside a file. 
 for example, search all  title="somerandomtext" inside a file  
 $ grep -o 'title="[^"]*"' blogs-i-follow.opml
