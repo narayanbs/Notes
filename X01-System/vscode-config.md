@@ -50,6 +50,8 @@ ext install dbaeumer.vscode-eslint
 ##### Install themes
 Everforest theme - ext install sainnhe.everforest
 
+Zenburn theme - ext install ryanolsonx.zenburn
+
 ##### Install Icons
 
 vscode icons -- This is a new one i am using
@@ -66,8 +68,8 @@ Open User settings using Ctrl+shift+p - `settings.json (~/.config/Code/User/sett
 ```js
 {
     "workbench.startupEditor": "none",
-    "editor.fontFamily": "JetBrainsMono Nerd Font",
-    "editor.fontLigatures": true,
+    "editor.fontFamily": "FiraCode Nerd Font",
+    "editor.fontLigatures": false,
     "editor.fontWeight": "500",
     "editor.fontSize": 14,
     "editor.formatOnSave": true,
@@ -75,7 +77,7 @@ Open User settings using Ctrl+shift+p - `settings.json (~/.config/Code/User/sett
         "source.organizeImports": "always"
     },
     "editor.inlayHints.enabled": "offUnlessPressed",
-    "workbench.colorTheme": "Everforest Dark",
+    "workbench.colorTheme": "Zenburn",
     "workbench.iconTheme": "vscode-icons",
     "editor.minimap.enabled": false,
     "emmet.includeLanguages": {
