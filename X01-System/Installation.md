@@ -51,12 +51,17 @@ and reboot
 * Install hugo (go to https://github.com/gohugoio/hugo/releases and download the appropriate version) and copy blogs folder
 * Install and Configure [AC600 Nano Wifi Adapter](./tplinkadapter.md). 
 * If you find two versions of gcc, then follow the fix in [Issues and fixes](./issues&fixes.md). 
-* Install tmux. (After installation launch tmux and press `<C-a>I` to install the plugins)
+
+* Install wezterm terminal or alacritty with tmux 
+
+* Install wezterm terminal.
 ~~~bash
-  $ sudo apt install tmux -y
-  # Install the plugin manager
-  $ git clone https://github.com/tmux-plugins/tpm ~/.config/tmux/plugins/tpm
-  $ cp -r dotfiles/.config/tmux ~/.config
+  $ curl -fsSL https://apt.fury.io/wez/gpg.key | sudo gpg --yes --dearmor -o /usr/share/keyrings/wezterm-fury.gpg
+  $ echo 'deb [signed-by=/usr/share/keyrings/wezterm-fury.gpg] https://apt.fury.io/wez/ * *' | sudo tee /etc/apt/sources.list.d/wezterm.list
+  $ sudo apt update
+  $ sudo apt install wezterm
+  $ cp -r dotfiles/.config/wezterm ~/.config
+  $ sudo update-alternatives --config x-terminal-emulator  (and choose wezterm in the options)
 ~~~
 
 * Install alacritty terminal. 
@@ -64,6 +69,14 @@ and reboot
   $ sudo add-apt-repository ppa:aslatter/ppa -y
   $ sudo apt install alacritty
   $ cp -r dotfiles/.config/alacritty ~/.config
+  $ sudo update-alternatives --config x-terminal-emulator  (and choose alacritty in the options)
+~~~
+* Install tmux. (After installation launch tmux and press `<C-a>I` to install the plugins)
+~~~bash
+  $ sudo apt install tmux -y
+  # Install the plugin manager
+  $ git clone https://github.com/tmux-plugins/tpm ~/.config/tmux/plugins/tpm
+  $ cp -r dotfiles/.config/tmux ~/.config
 ~~~
 
 * Install starship cross-shell prompt
@@ -75,7 +88,7 @@ and reboot
 ~~~
 
 * Install Chrome
-* Install extensions - ublock origin,privacy badger, google translate / dictionary, save page WE, Print Edit WE, one-tab, bitwarden, just focus and debug css
+* Install extensions - ublock origin,privacy badger, save page WE, Print Edit WE, one-tab, bitwarden, debug css
  go to auto-fill in chrome settings and disable "offer to save passwords" and "auto-signing"
 
 #### Languages
