@@ -22,8 +22,10 @@ $ xsel --clipboard --output | fold -w 80 > /tmp/clipboard_folded.txt
 $ vim /tmp/clipboard_folded.txt
 
 #### Search for all occurences of a string inside a file. 
-for example, search all  title="somerandomtext" inside a file  
+for example, to search all **title="somerandomtext"** inside a file  
+
 $ grep -o 'title="[^"]*"' blogs-i-follow.opml
+
 $ cat blogs-i-follow.opml | grep -o 'title="[^"]*"' 
 
 #### Search for a string inside all files in a directory
@@ -31,6 +33,8 @@ $ grep -rni "text string" /path/to/directory
      -r performs a recursive search within subdirectories.
      -n displays the line number containing the pattern.
      -i ignores the case of the text string.
+
+
 
 To filter the results and display only the filenames without duplication, you can use the following command:
 
