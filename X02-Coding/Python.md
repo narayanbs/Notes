@@ -20,17 +20,23 @@ $ source myenv/bin/activate
 # Install dependencies
 $ pip install django~=4.0 black flake8-bugbear isort mypy pytest
 
+# Create the following files
+touch pyproject.toml .flake8
+
 # Update pyproject.toml
 [tool.isort]
 profile = "black"
 
-# create .flake8 and add the following 
+# Update .flake8 
 [flake8]
 max-line-length = 100
 ignore = E203, E266, E501, W503, F403
 exclude = .git,__pycache__,build,dist,.eggs,postgres
 
-# create .gitignore and add the contents mentioned
+# Initialize git
+$ git init 
+
+# create .gitignore and copy the contents mentioned
 # at the end of this file
 
 # Create test files inside tests
