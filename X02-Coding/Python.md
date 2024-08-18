@@ -179,7 +179,7 @@ $ poetry export --output requirements.txt
 ```
 #.gitignore
 
-```bash
+```
 __pycache__
 *.py[cod]
 *$py.class
