@@ -17,8 +17,11 @@ $ pyenv local 3.11.0
 $ python -m venv myenv
 $ source myenv/bin/activate
 
-# Install dependencies
-$ pip install django~=4.0 black flake8-bugbear isort mypy pytest
+# Install basic dependencies
+$ pip install black flake8-bugbear isort mypy pytest 
+
+# Install project specific dependencies
+$ pip install django
 
 # Create the following files
 touch pyproject.toml .flake8
