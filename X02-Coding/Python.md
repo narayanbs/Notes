@@ -177,9 +177,9 @@ $ python run
 Note: To create a requirements.txt from poetry.lock, use the following command
 $ poetry export --output requirements.txt
 ```
-#.gitignore
+# gitignore file
 
-```
+```bash
 __pycache__
 *.py[cod]
 *$py.class
