@@ -179,7 +179,6 @@ $ poetry export --output requirements.txt
 ```
 # gitignore file
 
-```bash
 __pycache__
 *.py[cod]
 *$py.class
@@ -254,4 +253,3 @@ ENV/
 !.vscode/launch.json
 !.vscode/extensions.json
 .history
-```
