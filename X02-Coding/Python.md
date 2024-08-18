@@ -178,7 +178,7 @@ Note: To create a requirements.txt from poetry.lock, use the following command
 $ poetry export --output requirements.txt
 ```
 .gitignore
-```
+~~~bash
 __pycache__
 *.py[cod]
 *$py.class
@@ -253,4 +253,4 @@ ENV/
 !.vscode/launch.json
 !.vscode/extensions.json
 .history
-```
+~~~
