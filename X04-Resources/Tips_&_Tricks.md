@@ -1,3 +1,8 @@
+#### How to open a file using a default application from command line in linux
+$ xdg-open <file>
+for ex: To open a pdf file in the document viewer
+$ xdg-open sample.pdf
+
 #### How to insert contents from clipboard into the current Vim buffer with width formatting.
 We can use xclip or xsel to fetch the clipboard content
 The following will open vim and run the command 'r !xsel -o | fold -w 80'
@@ -29,7 +34,8 @@ $ grep -o 'title="[^"]*"' blogs-i-follow.opml
 $ cat blogs-i-follow.opml | grep -o 'title="[^"]*"' 
 
 #### Search for a string inside all files in a directory
-$ grep -rni "text string" /path/to/directory
+$ grep -rni "text string" /path/to/directory  
+
      -r performs a recursive search within subdirectories.
      -n displays the line number containing the pattern.
      -i ignores the case of the text string.
@@ -38,12 +44,12 @@ $ grep -rni "text string" /path/to/directory
 
 To filter the results and display only the filenames without duplication, you can use the following command:
 
-$ grep -rli "text string" /path/to/directory
+$ grep -rli "text string" /path/to/directory  
     -l prints only the names of the files containing the pattern.
 
 To find files containing a specific text string using the find command, you can utilize the following syntax:
 
-$ find /path/to/directory -type f -exec grep -l "text string" {} \;
+$ find /path/to/directory -type f -exec grep -l "text string" {} \;  
 
     /path/to/directory specifies the directory in which the search will be performed.
     -type f filters the search to only include regular files.
