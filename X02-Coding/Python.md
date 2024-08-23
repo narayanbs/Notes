@@ -30,7 +30,14 @@ touch pyproject.toml .flake8
 [tool.isort]
 profile = "black"
 
-# Update .flake8 
+[tool.pytest.ini.options]
+minversion = "6.0"
+addopts = "-ra -q --cov scratch --cov-report html"
+testpaths = [
+    "tests",
+]
+
+# Update .flake8
 [flake8]
 max-line-length = 100
 ignore = E203, E266, E501, W503, F403
