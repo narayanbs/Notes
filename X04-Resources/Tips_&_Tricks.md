@@ -1,3 +1,19 @@
+#### How to Burn an ISO file to USB drive in Linux
+List all the block devices
+$ lsblk
+
+Identify your USB drive - /dev/sdb1 or similar
+
+Unmount the USB drive
+$ sudo umount /dev/sdb1
+
+Check if the USB is unmounted.
+$ lsblk
+
+Burn the iso to USB drive
+$ sudo dd bs=4M if=ubuntu-24.04.1-desktop-amd64.iso of=/dev/sdb status=progress oflag=sync
+
+
 #### How to open a file using a default application from command line in linux
 $ xdg-open <file>
 for ex: To open a pdf file in the document viewer
