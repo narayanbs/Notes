@@ -1,3 +1,17 @@
+# tmux status bar 
+To turn off the status bar, launch tmux and then in the command line type
+```bash
+$ tmux set status off
+```
+To turn on
+```bash
+$ tmux set status on
+```
+To make the changes permanent, add the following at the bottom of tmux.conf
+```bash
+set -g status off
+```
+
 # neovim clipboard issue
 ```bash
 sudo apt install xsel
