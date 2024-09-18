@@ -48,9 +48,7 @@ ext install dbaeumer.vscode-eslint
 ```
 
 ##### Install themes
-Everforest theme - ext install sainnhe.everforest
-
-Zenburn theme - ext install ryanolsonx.zenburn
+Catppuccin Theme - ext install Catppuccin.catppuccin-vsc
 
 ##### Install Icons
 
@@ -70,14 +68,15 @@ Open User settings using Ctrl+shift+p - `settings.json (~/.config/Code/User/sett
     "workbench.startupEditor": "none",
     "editor.fontFamily": "FiraCode Nerd Font",
     "editor.fontLigatures": false,
-    "editor.fontWeight": "500",
-    "editor.fontSize": 14,
+    "editor.fontWeight": "400",
+    "editor.fontSize": 15,
     "editor.formatOnSave": true,
     "editor.codeActionsOnSave": {
         "source.organizeImports": "always"
     },
     "editor.inlayHints.enabled": "offUnlessPressed",
-    "workbench.colorTheme": "Zenburn",
+    "workbench.colorTheme": "Catppuccin Mocha",
+    "catppuccin.italicKeywords": false,
     "workbench.iconTheme": "vscode-icons",
     "editor.minimap.enabled": false,
     "emmet.includeLanguages": {
