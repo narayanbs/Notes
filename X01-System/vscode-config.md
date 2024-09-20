@@ -75,7 +75,7 @@ Open User settings using Ctrl+shift+p - `settings.json (~/.config/Code/User/sett
         "source.organizeImports": "always"
     },
     "editor.inlayHints.enabled": "offUnlessPressed",
-    "workbench.colorTheme": "Catppuccin Mocha",
+    "workbench.colorTheme": "Catppuccin Frappe",
     "catppuccin.italicKeywords": false,
     "workbench.iconTheme": "vscode-icons",
     "editor.minimap.enabled": false,
