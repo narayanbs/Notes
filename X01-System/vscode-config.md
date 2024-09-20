@@ -66,10 +66,10 @@ Open User settings using Ctrl+shift+p - `settings.json (~/.config/Code/User/sett
 ```js
 {
     "workbench.startupEditor": "none",
-    "editor.fontFamily": "JetBrainsMono Nerd Font",
+    "editor.fontFamily": "CaskaydiaMono Nerd Font",
     "editor.fontLigatures": false,
     "editor.fontWeight": "400",
-    "editor.fontSize": 16,
+    "editor.fontSize": 15,
     "editor.formatOnSave": true,
     "editor.codeActionsOnSave": {
         "source.organizeImports": "always"
