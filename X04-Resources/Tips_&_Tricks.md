@@ -86,7 +86,7 @@ And enter the following in the command line
 arp -a | grep 192.168.1. | grep ether
 
 ##### Connect two devices in the same network
-* Find the IP of the the devices.
+* Find the IP of the devices.
 * Ping the IP addresses to check if they are connected
 * Run ssh
 ssh -y root@your_ip_address
@@ -109,3 +109,4 @@ window
 ##### Adding Unicode characters in Linux on Neovim
 * Press Ctrl+Shift+u, then type the hexadecimal code of the Unicode character and press 
 enter
+
