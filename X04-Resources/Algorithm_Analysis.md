@@ -9,7 +9,7 @@ Is there a way to analyze the performance of algorithms without the overhead of
 hardware, input patterns etc?? 
 It would be pointless to test against all the inputs and on different computers.
 
-In asymptotic analysis we evaluate the performance of the an algorithm in terms 
+In asymptotic analysis we evaluate the performance of an algorithm in terms 
 of input size i.e instead of measuring the actual running time, we analyze how 
 the time (or space) taken by an algorithm increases with the input size.
 
@@ -166,8 +166,8 @@ time complexity .
        }
    }
 
-   for (int i = n; i > 0; i -= c) {
-       for (int j = i+1; j <=n; j += c) {
+   for (int i = n; i >= 0; i -= c) {
+       for (int j = n; j >=0; j -= c) {
           // some O(1) expressions
    }
 ```

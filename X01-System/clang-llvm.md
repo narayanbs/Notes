@@ -3,7 +3,7 @@
 ~~~bash
   $ sudo apt-get update
   $ sudo apt-get upgrade
-  $ sudo apt-get install build-essential curl xz-utils
+  $ sudo apt-get install build-essential curl
 ~~~
 
 #### Installation
