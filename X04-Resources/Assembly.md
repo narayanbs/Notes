@@ -36,10 +36,13 @@ sub-set of the complete AVX512 instruction sets.
 
 ##### X64 linux ABI
 - x64 linux abi -- specifies the following registers to be saved/restored
-`RAX, RCX, RDX, R8, R9, R10, R11` --> caller saved registers -- save before 
-calling a function and restore after return
+
 `RBX, RBP, R12, R13, R14, R15` --> calleee saved registers  -- the called 
 function must save before modifying it and restoring while exiting 
+
+`RAX, RCX, RDX, R8, R9, R10, R11` --> caller saved registers -- save before 
+calling a function and restore after return
+
 - In x64 stack should be aligned to 16-bytes before making a function call.  
 see `Repos/ex03.asm` for more details
 - if global main is used, the main return address will already be on the stack, 
