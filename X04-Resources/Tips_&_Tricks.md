@@ -11,13 +11,23 @@ Check if the USB is unmounted.
 $ lsblk
 
 Burn the iso to USB drive
-$ sudo dd bs=4M if=ubuntu-24.04.1-desktop-amd64.iso of=/dev/sdb status=progress oflag=sync
+$ sudo dd if=ubuntu-24.04.1-desktop-amd64.iso of=/dev/sdb bs=4M status=progress oflag=sync
 
 
 #### How to open a file using a default application from command line in linux
 $ xdg-open <file>
 for ex: To open a pdf file in the document viewer
 $ xdg-open sample.pdf
+
+#### Using xsel to copy contents from Vim to Clipboard and vice versa
+* Copy from vim to clipboard
+Select the lines in visual mode 
+Press ":" to go to command line and enter the following command
+:'<,'> !tee >(xsel -b)
+
+* Copy from clipboard and paste into vim
+Press ":" to go to command line
+:r !xsel -b
 
 #### How to insert contents from clipboard into the current Vim buffer with width formatting.
 We can use xclip or xsel to fetch the clipboard content
