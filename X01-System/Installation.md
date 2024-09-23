@@ -37,12 +37,15 @@ and reboot
 * For gnome-text-editor `sudo cp gnome-text-editor-themes/catpuccin-frappe.xml /usr/share/gnome-text-editor/styles`
 
 * Install curl, tree, htop `sudo apt install htop curl tree` -y
-* Install neovim and add an alias in .bashrc (alias vim='nvim--clean')
+* Install neovim and add an alias in .bashrc (alias vim='nvim --clean')
 ~~~bash
   # visit https://github.com/neovim/neovim/releases
-  # Download stable nvim.appimage
-  $ chmod +x nvim.appimage
-  $ ./nvim.appimage
+  # Download stable nvim-linux64.tar.gz and copy it into Devide
+  $ mkdir ~/Devide && cp ~/Downloads/nvim-linux64.tar.gz
+  $ tar -xzf nvim-linux64.tar.gz
+  # Add bin folder to .bashrc
+  export PATH=$PATH:~/Devide/nvim-linux64/bin
+  $ source .bashrc
 
   # If you get an error about lack of fuse library, install it
   $ sudo apt install libfuse.so.2

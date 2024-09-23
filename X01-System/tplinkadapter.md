@@ -9,8 +9,9 @@
 ~~~bash
 sudo apt install git
 git clone https://github.com/morrownr/8821au-20210708.git
-sudo dkms add ./8821au-20210708
-sudo dkms install rtl8821au/5.12.5.2
+cd 8821au-20210708
+sudo ./install-driver.sh
+Press enter to accept the default and reboot
 ~~~
 
 * For versions below 24.04
@@ -38,7 +39,15 @@ sudo dkms install rtl8821au/5.12.5.2
 
 #### Uninstall driver
 
-* To remove the driver from your system, cd into the directory that contains the source code and execute the following command:
+* To remove the driver from your system, 
+After 24.04
+~~~bash
+$ cd 8812au-20210708
+$ sudo ./remove-driver.sh
+~~~
+
+Pre 24.04
+cd into the directory that contains the source code and execute the following command:
 ~~~bash
   $ sudo make dkms_remove
 ~~~

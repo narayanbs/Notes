@@ -48,8 +48,10 @@ ext install dbaeumer.vscode-eslint
 ```
 
 ##### Install themes
-Catppuccin Theme - ext install Catppuccin.catppuccin-vsc
-
+Catppuccin Theme 
+```js
+ext install Catppuccin.catppuccin-vsc
+```
 ##### Install Icons
 
 vscode icons -- This is a new one i am using
@@ -75,7 +77,7 @@ Open User settings using Ctrl+shift+p - `settings.json (~/.config/Code/User/sett
         "source.organizeImports": "always"
     },
     "editor.inlayHints.enabled": "offUnlessPressed",
-    "workbench.colorTheme": "Catppuccin Frappe",
+    "workbench.colorTheme": "Catppuccin Mocha",
     "catppuccin.italicKeywords": false,
     "workbench.iconTheme": "vscode-icons",
     "editor.minimap.enabled": false,
