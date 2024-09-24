@@ -27,6 +27,9 @@ $ pip install django
 touch pyproject.toml .flake8
 
 # Update pyproject.toml
+[tool.black]
+line-length = 100
+
 [tool.isort]
 profile = "black"
 
