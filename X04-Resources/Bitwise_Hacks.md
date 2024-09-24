@@ -5,13 +5,15 @@ Operators
 
 Basic Operations
 
-x & 1  ---> x
-x | 1 ---> 1
-x ^ 1 ---> ~x
-~x  ---> toggle everything
-x - 1 ---> make the right most 1 bit 0 and everything that follows as 1
-x + 1 ---> make the right most 0 bit 1 and everything that follows as 0. 
--x ---> toggle everything before you reach the last 1 bit. 
+```bash
+x & 1  ---> x  
+x | 1 ---> 1  
+x ^ 1 ---> ~x  
+~x  ---> toggle everything  
+x - 1 ---> make the right most 1 bit 0 and everything that follows as 1  
+x + 1 ---> make the right most 0 bit 1 and everything that follows as 0.  
+-x ---> toggle everything before you reach the last 1 bit.  
+```
 
 Examples:
 ```bash
