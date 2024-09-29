@@ -68,7 +68,7 @@ Open User settings using Ctrl+shift+p - `settings.json (~/.config/Code/User/sett
 ```js
 {
     "workbench.startupEditor": "none",
-    "editor.fontFamily": "CaskaydiaMono Nerd Font",
+    "editor.fontFamily": "Cascadia Code NF",
     "editor.fontLigatures": false,
     "editor.fontWeight": "400",
     "editor.fontSize": 15,
@@ -77,8 +77,7 @@ Open User settings using Ctrl+shift+p - `settings.json (~/.config/Code/User/sett
         "source.organizeImports": "always"
     },
     "editor.inlayHints.enabled": "offUnlessPressed",
-    "workbench.colorTheme": "Catppuccin Mocha",
-    "catppuccin.italicKeywords": false,
+    "workbench.colorTheme": "Gruvbox Material Dark",
     "workbench.iconTheme": "vscode-icons",
     "editor.minimap.enabled": false,
     "emmet.includeLanguages": {
