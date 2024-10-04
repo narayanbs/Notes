@@ -34,10 +34,11 @@ dd: error writing '/dev/sdb': No space left on device
 	(parted)mklabel msdos
 	(parted)mkpart primary fat32 1MiB 100% 
 	(parted)print	
+    (parted)q
 	```
-- Format the partition
+- Create a filesystem in the new partition we created
 	```
-	sudo mkfs.vfat -F32 /dev/sdb
+	sudo mkfs.vfat -F32 /dev/sdb1
 	```
 
 # Creating Bootable USB

@@ -1,6 +1,19 @@
+#### How to Safely remove a drive from command line 
+List all the block devices
+$ lsblk -e7
+Suppose the device we want to power off is as shown below 
+sdb
+|_ sdb1 
+
+Unmount the filesystem in the partition and power-off the device using udisksctl
+$ sudo udisksctl unmount -b /dev/sdb1
+$ sudo udisksctl power-off -b /dev/sdb 
+
 #### How to Burn an ISO file to USB drive in Linux
 List all the block devices
-$ lsblk
+$ lsblk -e7
+    or
+$ sudo lshw -class disk -short
 
 Identify your USB drive - /dev/sdb1 or similar
 
