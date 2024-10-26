@@ -1,3 +1,20 @@
+#### How to view a file with line numbers in command line
+$ nl <filename>
+Line numbers won't be added to newlines by default. we can use the following 
+command to add line numbers to all the lines
+$ nl -b a <filename>
+
+#### How to view a portion of a file in command line
+$ sed -n 'start,endp;' filename 
+ex:
+$ sed -n '12,20p;' deadline.txt
+
+If we do this on a very large file, we should add a quit command on the next line
+to prevent sed from scanning the whole file
+$ sed -n 'start,endp;end+1q' filename
+ex:
+$ sed -n '12,20p;21q' deadline.txt
+
 #### How to Safely remove a drive from command line 
 List all the block devices
 $ lsblk -e7
