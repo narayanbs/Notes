@@ -1,6 +1,25 @@
-tmux is a terminal multiplexer. When you open tmux, you get a session associated with a window and a pane.
-Each session can have multiple windows and each window can have multiple panes. The session can be named and we can 
-detach/re-attach to a session using the name.
+tmux is a terminal multiplexer.
+By default, tmux looks for a configuration file in any of the following locations
+* $XDG_CONFIG_HOME/tmux/tmux.conf
+* ~/.config/tmux/tmux.conf
+* /etc/tmux.conf
+
+Tmux configuration can be divided into three main categories.
+* server/session options
+* user options
+* window and pane options
+
+The options can be set using the set command
+ex:
+        set-option ... or set ...
+
+The command uses zero or more set of flags and arguments
+-s is used to apply session options for ex: set-option -s or set -s
+-w i used to apply window options  ex: set-option -w or set -w
+-g sets a global option for all sessions and windows. ex: set-option -g or set -g
+-a appends the value to existing options ex: set-option -a or set -a
+
+Tmux is modal and has different operating modes like command mode, copy mode, view mode etc.
 
 #### Installation & Configuration
 
@@ -88,11 +107,6 @@ If we are inside tmux terminal we can use
 $ <C-a>s 
 ```
 
-
-**navigate between sessions**
-To navigate between the sessions we can use `j and k` like in vim and press enter.
-use `<Esc>` or `q` to exit
-
 #### Window Management
 
 **create and close window**
@@ -105,7 +119,6 @@ $ <C-a>&   to kill the current window
 ```bash
 $ <C-a>, 
 ```
-
 
 Each window (regardless of name) has a window id of 0,1,2...
 
@@ -132,31 +145,24 @@ To see all your windows press `<C-a>w`
 
 <C-j>, <C-k>, <C-h>, <C-l>  to navigate b/w panes
 
+<C-a>q    to view the pane numbers
 ```
 
-#### Others
+Copy - Mode
+------------
+<C-a>[ to swith to copy mode
+v to make selection (j or k to move or down)
+y to yank selection
+<C-a>] to paste the selection
+q to quit copy mode 
 
-**to enable and disable mouse**
-$ :set -g mouse on 
-$ :set -g mouse off 
+Tricks
+--------
+suppose we have 3 windows (0, 1, 2) and we wish to merge the second window into the first
+as two panes (side by side).
 
-**to copy and paste in Tmux between tmux and host**
-`<C-a>[`  to enter into copy mode vim like . select text and then yank using `y`. You can paste from clipboard using `<Ctrl+Shift+V>`
-`q` to exit copy mode and return to normal mode.
-
-or
-
-`<Ctrl-Shift+C>` to copy to X clipboard and `<Ctrl+shift+V>` to paste from X clipboard
-
-#### Using Tmux Resurrect  to restore sessions
-
-**tmux-resurrect keyboard shortcuts:**
-
-```bash
-<C-a><C-s> for saving sessions
-<C-a><C-r> for restoring sessions
-```
-
-the sessions are stored in ~/.local/share/tmux/resurrect folder.
+1. Enter command mode  C-a :
+2. Merge the windows join-pane -s 2 -t 1
+3. Move the pane at the bottom to the side C-a Alt-1
 
 
