@@ -1,3 +1,30 @@
+#### How to get the PID of a process holding a particular port 
+$ lsof -i TCP:22
+
+COMMAND  PID  USER   FD   TYPE DEVICE SIZE/OFF NODE NAME
+sshd     890  root    5u  IPv4  24658      0t0  TCP *:ssh (LISTEN)
+sshd     890  root    7u  IPv6  24666      0t0  TCP *:ssh (LISTEN)
+
+$ lsof -i :8080
+
+COMMAND  PID  USER       FD   TYPE DEVICE SIZE/OFF NODE NAME
+main    14571 narayan    3u  IPv4  72478      0t0  TCP localhost:http-alt (LISTEN)
+
+#### To get what files a process has open
+$ lsof -p 2479
+
+#### To get what files a particular user has open
+$ lsof -u narayan
+
+#### To get what process is using a particular directory
+$ lsof /run
+
+COMMAND    PID  USER   FD   TYPE DEVICE SIZE/OFF  NODE NAME
+systemd      1  root   31u  FIFO   0,24      0t0 19314 /run/initctl
+systemd      1  root   38u  FIFO   0,24      0t0 19331 /run/dmeventd-server
+systemd      1  root   39u  FIFO   0,24      0t0 19332 /run/dmeventd-client
+
+
 #### How to view a file with line numbers in command line
 $ nl <filename>
 Line numbers won't be added to newlines by default. we can use the following 
