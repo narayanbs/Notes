@@ -48,9 +48,9 @@ ext install dbaeumer.vscode-eslint
 ```
 
 ##### Install themes
-Catppuccin Theme 
+One dark Theme 
 ```js
-ext install Catppuccin.catppuccin-vsc
+ext install mskelton.one-dark-theme
 ```
 ##### Install Icons
 
@@ -62,7 +62,9 @@ ext install vscode-icons-team.vscode-icons
 The extensions are stored in ~/.vscode/extensions
 
 #### User settings
+Copy keybindings.json and settings.json from dotfiles/.config/Code/User and paste it into ~/.config/Code/User folder
 
+#### Just for reference
 Open User settings using Ctrl+shift+p - `settings.json (~/.config/Code/User/settings.json)` and enter the following
 
 ```js
