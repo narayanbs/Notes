@@ -4,10 +4,12 @@
 	lsblk -e7
 	or 
 	lsblk -f 
+    or
+  sudo lshw -class disk -short
 	```
 - Make sure the drive is unmounted
 ```
-	 sudo umount /dev/sdb?
+	 sudo umount /dev/sdb1
 ```
 - Erase everything on the pen-drive (this is optional and you can skip to the next step)
 	```
@@ -51,7 +53,7 @@ dd: error writing '/dev/sdb': No space left on device
 	```
 - Make sure the drive is unmounted
 	```
-	 sudo umount /dev/sdb?
+	 sudo umount /dev/sdb1
 	```
 - Now create the bootable disk using dd
 	```
