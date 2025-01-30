@@ -1,3 +1,8 @@
+# kitty default terminal
+To make kitty the default terminal 
+```bash
+$ sudo update-alternatives --install /usr/bin/x-terminal-emulator x-terminal-emulator /home/narayan/.local/kitty.app/bin/kitty 100
+```
 # tmux status bar 
 To turn off the status bar, launch tmux and then in the command line type
 ```bash
