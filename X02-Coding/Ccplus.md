@@ -2,9 +2,12 @@
 $ clang-format -style=llvm -dump-config > .clang-format
 
 ##### Modify the following lines in .clang-format
+~~~
 ColumnLimit: 100
 MaxEmptyLinesToKeep: 1
 SeparateDefinitionBlocks: Always
+AllowShortFunctionsOnASingleLine: Empty
+~~~
 
 ##### Create a .gitignore file and add the following
 ```
