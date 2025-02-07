@@ -25,7 +25,7 @@
 ~~~
 or 
 
-* Download releases from https://github.com/kovidgoyal/kitty/releases/download/
+* Download releases from https://github.com/kovidgoyal/kitty/releases/
 * Extract and install
 ~~~bash
   $ mkdir ~/.local/kitty.app && cd ~/.local/kitty.app/
