@@ -91,6 +91,15 @@ and reboot
 * Install [python](./Python.md)
 * Install [node](./node-npm.md)
 
+* Install zig
+* Download the zig binary from https://ziglang.org/download/
+* Extract it to $HOME/lang
+~~~bash
+  $ curl -SLO https://ziglang.org/builds/zig-linux-x86_64-0.14.0-dev.3271+bd237bced.tar.xz
+  $ tar -xvf zig-linux-x86_64-0.14.0-dev.3271+bd237bced.tar.xz -C ~/lang
+  $ export PATH=$PATH:$HOME/zig # (in .bashrc)
+~~~
+
 #### Editors
 
 * Install Lazyvim and configure it [neovim](./neovim-config.md)
