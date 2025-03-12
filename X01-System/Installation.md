@@ -113,6 +113,7 @@ and reboot
 * Install ripgrep (`sudo apt install ripgrep`)
 * Install fd-find (`sudo apt install fd-find and alias fd='fdfind' in .bashrc`)
 * Install yt-dlp
+* Install scanner (`sudo apt install simple-scan`)
 ~~~bash
   $ sudo curl -L https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp -o /usr/local/bin/yt-dlp
   $ sudo chmod a+rx /usr/local/bin/yt-dlp
