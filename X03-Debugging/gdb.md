@@ -1,3 +1,7 @@
+* Use `ctrl+x 1` or `ctrl+x a` to enter tui mode
+* Use `ctrl+x 2` repeatedly to get different windows. (assembly, assembly + C source code, assembly + C + registers)
+
+
   (gdb) `break main`
   (gdb) `run  6`              # run with the command line argument 6
   (gdb) show disassembly-flavor  # either "att" or intel 
