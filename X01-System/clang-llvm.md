@@ -22,4 +22,9 @@
   export LD_LIBRARY_PATH=/usr/local/clang_17.0.2/lib:$LD_LIBRARY_PATH
 ~~~
 
-You may need to install libncurses5 if you get libtinfo.so.5 error `sudo apt install libncurses5`
+You may need to install libncurses5 if you get libtinfo.so.5 error   
+~~~
+sudo apt update
+wget http://security.ubuntu.com/ubuntu/pool/universe/n/ncurses/libtinfo5_6.3-2ubuntu0.1_amd64.deb
+sudo apt install ./libtinfo5_6.3-2ubuntu0.1_amd64.deb
+~~~
