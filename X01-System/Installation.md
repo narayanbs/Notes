@@ -97,7 +97,7 @@ and reboot
 ~~~bash
   $ curl -SLO https://ziglang.org/builds/zig-linux-x86_64-0.14.0-dev.3271+bd237bced.tar.xz
   $ tar -xvf zig-linux-x86_64-0.14.0-dev.3271+bd237bced.tar.xz -C ~/lang
-  $ export PATH=$PATH:$HOME/zig # (in .bashrc)
+  $ export PATH=$PATH:$HOME/lang/zig # (in .bashrc)
 ~~~
 
 #### Editors
