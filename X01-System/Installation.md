@@ -127,5 +127,6 @@ and reboot
 ~~~
 * install audacious (`sudo apt install audacious`)
 * Install Foliate e-book reader (`sudo snap install foliate`)
+* Install ranger file manager (sudo apt install ranger)
 * Install Zoxide (curl -sSfL https://raw.githubusercontent.com/ajeetdsouza/zoxide/main/install.sh | sh)
 * Install fzf (Download gz from https://github.com/junegunn/fzf/releases)
