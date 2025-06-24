@@ -102,6 +102,8 @@ and reboot
 
 #### Editors
 
+* Configure neovim by using latestnvim from dotfiles. (Install lsp using Mason)
+    or
 * Install Lazyvim and configure it [neovim](./neovim-config.md)
 * Install and configure [vscode](./vscode-config.md)
 * Install and configure [zed](./zed-config.md)
