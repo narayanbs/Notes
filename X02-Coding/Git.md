@@ -266,6 +266,7 @@ Undoing things
 --------------------
 
 ### Unstaging a Staged File
+
 Command: git reset 
 
 For example, let’s say you’ve changed two files and want to commit them as two separate changes, but you accidentally 
@@ -331,7 +332,8 @@ Changes not staged for commit:
 The CONTRIBUTING.md file is modified but once again unstaged.
 
 
-### Unmodifying a Modified File
+### Unmodifying a Modified File in workspace 
+
 What if you realize that you don’t want to keep your changes to the CONTRIBUTING.md file? How can you easily unmodify it
  — revert it back to what it looked like when you last committed (or initially cloned, or however you got it into your working directory)
 
@@ -360,6 +362,10 @@ $ git restore CONTRIBUTING.md
 $ git status
 On branch master
 Changes to be committed:
+
+
+Point to remember: 
+git checkout only affects the files in workspace, not staging
 
 Working with Remotes
 --------------------
