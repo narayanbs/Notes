@@ -132,3 +132,4 @@ and reboot
 * Install ranger file manager (sudo apt install ranger)
 * Install Zoxide (curl -sSfL https://raw.githubusercontent.com/ajeetdsouza/zoxide/main/install.sh | sh)
 * Install fzf (Download gz from https://github.com/junegunn/fzf/releases)
+* Install pinta Image Editor (Snap package from App Center in ubuntu desktop)
