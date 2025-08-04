@@ -1,7 +1,3 @@
-##### Vim extension for vscode
-
-ext install vscodevim.vim
-
 ##### Install Python extension and Black Formatter
 
 Launch VS Code Quick Open (ctrl+p), paste the following and enter
@@ -29,6 +25,19 @@ ext install llvm-vs-code-extensions.vscode-clangd
 ext install ritwickdey.LiveServer
 ```
 
+##### Vim extension for vscode
+
+```js
+ext install vscodevim.vim
+```
+
+##### Install Icons
+
+vscode icons -- This is a new one i am using
+```js
+ext install vscode-icons-team.vscode-icons
+```
+
 ##### Install ES7 React/Redux/GraphQL/React-Native snippets
 
 ```js
@@ -52,71 +61,12 @@ One dark Theme
 ```js
 ext install mskelton.one-dark-theme
 ```
-##### Install Icons
-
-vscode icons -- This is a new one i am using
-```js
-ext install vscode-icons-team.vscode-icons
-```
 
 The extensions are stored in ~/.vscode/extensions
 
 #### User settings
 Copy keybindings.json and settings.json from dotfiles/.config/Code/User and paste it into ~/.config/Code/User folder
 
-#### Just for reference
-Open User settings using Ctrl+shift+p - `settings.json (~/.config/Code/User/settings.json)` and enter the following
-
-```js
-{
-    "workbench.startupEditor": "none",
-    "editor.fontFamily": "Cascadia Code NF",
-    "editor.fontLigatures": false,
-    "editor.fontWeight": "400",
-    "editor.fontSize": 15,
-    "editor.formatOnSave": true,
-    "editor.codeActionsOnSave": {
-        "source.organizeImports": "always"
-    },
-    "editor.inlayHints.enabled": "offUnlessPressed",
-    "workbench.colorTheme": "Gruvbox Material Dark",
-    "workbench.iconTheme": "vscode-icons",
-    "editor.minimap.enabled": false,
-    "emmet.includeLanguages": {
-        "javascript": "javascriptreact"
-    },
-    "gopls": {
-        "ui.semanticTokens": true
-    },
-    "[python]": {
-        "editor.defaultFormatter": "ms-python.black-formatter"
-    },
-    "[html]": {
-        "editor.defaultFormatter": "vscode.html-language-features"
-    },
-    "[javascript][javascriptreact][typescript]": {
-        "editor.defaultFormatter": "vscode.typescript-language-features"
-    },
-    "[json][jsonc]": {
-        "editor.defaultFormatter": "vscode.json-language-features"
-    },
-    "[css][scss][less]": {
-        "editor.defaultFormatter": "vscode.css-language-features"
-    },
-    "explorer.confirmDelete": false,
-    "files.exclude": {
-        "**/.vscode": true,
-        "**/.venv": true,
-        "**/db.sqlite3": true,
-        "**/node_modules": true
-    },
-    "breadcrumbs.enabled": false,
-    "telemetry.telemetryLevel": "off",
-    "liveServer.settings.donotShowInfoMsg": true,
-    "vsicons.dontShowNewVersionMessage": true,
-}
-
-````
 
 ### Duplicate Line keyboard Shortcut
 

@@ -1,3 +1,8 @@
+# To disable google account popup in firefox
+Add the following to My filters in ublock origin preferences and apply the changes.
+```bash
+accounts.google.com/gsi/*
+```
 # kitty default terminal
 To make kitty the default terminal 
 ```bash

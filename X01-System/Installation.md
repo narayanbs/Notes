@@ -130,6 +130,6 @@ and reboot
 * install audacious (`sudo apt install audacious`)
 * Install Foliate e-book reader (`sudo snap install foliate`)
 * Install ranger file manager (sudo apt install ranger)
-* Install Zoxide (curl -sSfL https://raw.githubusercontent.com/ajeetdsouza/zoxide/main/install.sh | sh)
+* Install Zoxide (sudo apt install zoxide and add eval "$(zoxide init bash)" in .bashrc)
 * Install fzf (Download gz from https://github.com/junegunn/fzf/releases)
 * Install pinta Image Editor (Snap package from App Center in ubuntu desktop)
