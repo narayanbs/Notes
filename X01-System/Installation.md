@@ -23,18 +23,13 @@
   $ git clone https://github.com/narayanbs/Notes
 ~~~
 
-* Install Fira Code Nerd Font and JetBrainsMono Nerd Font
+* Install fonts (currently using MapleMono-NF*.ttf)
 ~~~bash
   $ cp Notes/Nerd_Fonts/*.ttf ~/.local/share/fonts
   $ fc-cache -f -v
 ~~~
-and reboot
 **Optional**
 * Install Fira Code font -- `sudo apt install fonts-firacode`
-
-* For gedit, goto preferences/Fonts & Colors, Choose Fira Code Nerd Font 11 Medium
-* Choose the theme gnome-text-editor-themes/catpuccin-frappe.xml by clicking the + button
-* For gnome-text-editor `sudo cp gnome-text-editor-themes/catpuccin-frappe.xml /usr/share/gnome-text-editor/styles`
 
 * Install curl, tree, htop `sudo apt install htop curl tree` -y
 * Install neovim and add an alias in .bashrc (alias vim='nvim --clean')
@@ -64,10 +59,11 @@ and reboot
   # Add the following to the end of .bashrc
   $ eval "$(starship init bash)"
 ~~~
-
+* Install firefox browser (https://support.mozilla.org/en-US/kb/install-firefox-linux#w_install-firefox-from-mozilla-builds)
+* Remove snap installed firefox browser (sudo snap remove --purge firefox)
 * Install Chrome
 * Install extensions - ublock origin,privacy badger, save page WE, Print Edit WE, one-tab, bitwarden, debug css
- go to auto-fill in chrome settings and disable "offer to save passwords" and "auto-signing"
+* go to auto-fill in chrome settings and disable "offer to save passwords" and "auto-signing"
 
 #### Languages
 
@@ -102,7 +98,7 @@ and reboot
 
 #### Editors
 
-* Configure neovim by using latestnvim from dotfiles. (Install lsp using Mason)
+* Configure neovim by using nvim from dotfiles. (Install lsp using Mason)
     or
 * Install Lazyvim and configure it [neovim](./neovim-config.md)
 * Install and configure [vscode](./vscode-config.md)
