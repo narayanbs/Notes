@@ -1,3 +1,8 @@
+# To stop getting [vaapi] libva: /usr/lib/x86_64-linux-gnu/dri/iHD_drv_video.so init failed
+Add the following to .bashrc and source it
+```bash
+export LIBVA_DRIVER_NAME=i965
+```
 # To disable google account popup in firefox
 Add the following to My filters in ublock origin preferences and apply the changes.
 ```bash
